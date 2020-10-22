@@ -11,12 +11,12 @@ module.exports = {
         index: './src/index.js',
     },  // 入口文件,多入口配置
     output: {
-        filename: IsDevelopment ? 'js/[name].js' : 'js/[name][hash:8].min.js',
-        path: path.resolve(__dirname, "build"),
-        chunkFilename: "js/[name].[hash:8].js",
-        publicPath: '/',
+        filename:'bundle.js',
+        path:__dirname,
     },  // 打包出口文件
     devServer: {
+        port: 8080,
+        ip:'192.168.1.3',
     },
     
 };
